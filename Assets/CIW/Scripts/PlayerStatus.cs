@@ -36,9 +36,14 @@ public class PlayerStatus : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 Debug.Log("Å½»öÃ¢ ¿­¸²");
+                PanelOpen = true;
+            }
+            else if (Input.GetKeyDown(KeyCode.Backspace) && PanelOpen)
+            {
+                Debug.Log("Å½»öÃ¢ ´ÝÈû");
                 PanelOpen = false;
             }
-            else if (Input.GetKeyDown(KeyCode.D))
+            else if (Input.GetKeyDown(KeyCode.D) && !PanelOpen)
             {
                 AttackStatus = true;
                 _attackText.color = Color.yellow;
@@ -46,7 +51,7 @@ public class PlayerStatus : MonoBehaviour
                 QuestStatus = false;
                 _questText.color = Color.white;
             }
-            else if (Input.GetKeyDown(KeyCode.S))
+            else if (Input.GetKeyDown(KeyCode.S) && !PanelOpen)
             {
                 EvasionStatus = true;
                 _evasionText.color = Color.yellow;
@@ -60,8 +65,14 @@ public class PlayerStatus : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 Debug.Log("°ø°ÝÃ¢ ¿­¸²");
+                PanelOpen = true;
             }
-            else if (Input.GetKeyDown(KeyCode.A))
+            else if (Input.GetKeyDown(KeyCode.Backspace) && PanelOpen)
+            {
+                Debug.Log("°ø°ÝÃ¢ ´ÝÈû");
+                PanelOpen = false;
+            }
+            else if (Input.GetKeyDown(KeyCode.A) && !PanelOpen)
             {
                 QuestStatus = true;
                 _questText.color = Color.yellow;
@@ -69,7 +80,7 @@ public class PlayerStatus : MonoBehaviour
                 AttackStatus = false;
                 _attackText.color = Color.white;
             }
-            else if (Input.GetKeyDown(KeyCode.S))
+            else if (Input.GetKeyDown(KeyCode.S) && !PanelOpen)
             {
                 HealStatus = true;
                 _healText.color = Color.yellow;
@@ -83,8 +94,14 @@ public class PlayerStatus : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 Debug.Log("È¸ÇÇÃ¢ ¿­¸²");
+                PanelOpen = true;
             }
-            else if (Input.GetKeyDown(KeyCode.W))
+            else if (Input.GetKeyDown(KeyCode.Backspace) && PanelOpen)
+            {
+                Debug.Log("È¸ÇÇÃ¢ ´ÝÈû");
+                PanelOpen = false;
+            }
+            else if (Input.GetKeyDown(KeyCode.W) && !PanelOpen)
             {
                 QuestStatus = true;
                 _questText.color = Color.yellow;
@@ -92,7 +109,7 @@ public class PlayerStatus : MonoBehaviour
                 EvasionStatus = false;
                 _evasionText.color = Color.white;
             }
-            else if (Input.GetKeyDown(KeyCode.D))
+            else if (Input.GetKeyDown(KeyCode.D) && !PanelOpen)
             {
                 HealStatus = true;
                 _healText.color = Color.yellow;
@@ -106,8 +123,14 @@ public class PlayerStatus : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 Debug.Log("È¸º¹Ã¢ ¿­¸²");
+                PanelOpen = true;
             }
-            else if (Input.GetKeyDown(KeyCode.W))
+            else if (Input.GetKeyDown(KeyCode.Backspace) && PanelOpen)
+            {
+                Debug.Log("È¸º¹Ã¢ ´ÝÈû");
+                PanelOpen = false;
+            }
+            else if (Input.GetKeyDown(KeyCode.W) && !PanelOpen)
             {
                 AttackStatus = true;
                 _attackText.color = Color.yellow;
@@ -115,7 +138,7 @@ public class PlayerStatus : MonoBehaviour
                 HealStatus = false;
                 _healText.color = Color.white;
             }
-            else if (Input.GetKeyDown(KeyCode.A))
+            else if (Input.GetKeyDown(KeyCode.A) && !PanelOpen)
             {
                 EvasionStatus = true;
                 _evasionText.color = Color.yellow;
