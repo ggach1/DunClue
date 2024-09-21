@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class StartUIButton : MonoBehaviour
 {
     [SerializeField] private GameObject _settingPanel;
+    [SerializeField] private string _nextScene;
 
     private void Start()
     {
@@ -14,7 +15,7 @@ public class StartUIButton : MonoBehaviour
 
     public void StartButton()
     {
-        Debug.Log("Ω√¿€");
+        SceneManager.LoadScene("InGame");
     }
 
     public void SettingButton()
