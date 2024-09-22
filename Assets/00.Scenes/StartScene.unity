@@ -1897,6 +1897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _settingPanel: {fileID: 1464554573}
+  _nextScene: InGame
 --- !u!1 &1055681313
 GameObject:
   m_ObjectHideFlags: 0
