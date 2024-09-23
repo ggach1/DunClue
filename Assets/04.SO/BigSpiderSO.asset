@@ -16,3 +16,9 @@ MonoBehaviour:
   _attack: 22
   _health: 85
   _evasion: 15
+  throwStone:
+  - 
+  - 
+  - 
+  card: []
+  focus: []
