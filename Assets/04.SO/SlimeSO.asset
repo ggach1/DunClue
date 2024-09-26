@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: SlimeSO
   m_EditorClassIdentifier: 
   _enemyName: Slime
-  _attack: 11
-  _health: 110
-  _evasion: 13
+  _attack: 7
+  _health: 120
+  _evasion: 7

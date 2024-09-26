@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: SkeletonSO
   m_EditorClassIdentifier: 
   _enemyName: Skeleton
-  _attack: 15
-  _health: 90
-  _evasion: 10
+  _attack: 11
+  _health: 80
+  _evasion: 8

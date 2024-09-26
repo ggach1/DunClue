@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DeathNightSO
   m_EditorClassIdentifier: 
   _enemyName: Death Night
-  _attack: 35
+  _attack: 17
   _health: 220
-  _evasion: 5
+  _evasion: 2
