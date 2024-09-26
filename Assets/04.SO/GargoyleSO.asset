@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: GargoyleSO
   m_EditorClassIdentifier: 
   _enemyName: Gargoyle
-  _attack: 26
-  _health: 125
-  _evasion: 7
+  _attack: 15
+  _health: 160
+  _evasion: 4

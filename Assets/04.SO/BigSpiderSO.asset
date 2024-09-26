@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BigSpiderSO
   m_EditorClassIdentifier: 
   _enemyName: BigSpider
-  _attack: 22
-  _health: 85
-  _evasion: 15
+  _attack: 9
+  _health: 110
+  _evasion: 6

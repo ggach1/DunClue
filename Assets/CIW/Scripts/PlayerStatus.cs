@@ -22,6 +22,16 @@ public class PlayerStatus : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _attackADText;
     [SerializeField] private TextMeshProUGUI _attackAPText;
 
+    [SerializeField] private GameObject _evasionBar;
+    [SerializeField] private TextMeshProUGUI _backStepText;
+    [SerializeField] private TextMeshProUGUI _sideStepText;
+    [SerializeField] private TextMeshProUGUI _spillingText;
+    [SerializeField] private TextMeshProUGUI _bowDownText;
+
+    [SerializeField] private GameObject _healBar;
+    [SerializeField] private TextMeshProUGUI _bandageText;
+    [SerializeField] private TextMeshProUGUI _potionText;
+
     public bool QuestStatus { get; set; } = false;
     public bool AttackStatus { get; set; } = false;
     public bool EvasionStatus { get; set; } = false;
@@ -48,6 +58,8 @@ public class PlayerStatus : MonoBehaviour
         _statusMenu.SetActive(true);
         _questBar.SetActive(false);
         _attackBar.SetActive(false);
+        _evasionBar.SetActive(false);
+        _healBar.SetActive(false);
     }
 
     private void Update()
@@ -172,12 +184,16 @@ public class PlayerStatus : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
-                Debug.Log("È¸ÇÇÃ¢ ¿­¸²");
+                _evasionBar.SetActive(true);
+                _statusMenu.SetActive(false);
                 PanelOpen = true;
+
+                _backStepText.color = Color.yellow;
             }
             else if (Input.GetKeyDown(KeyCode.Backspace) && PanelOpen)
             {
-                Debug.Log("È¸ÇÇÃ¢ ´ÝÈû");
+                _evasionBar.SetActive(false);
+                _statusMenu.SetActive(true);
                 PanelOpen = false;
             }
             else if (Input.GetKeyDown(KeyCode.W) && !PanelOpen)
@@ -201,12 +217,16 @@ public class PlayerStatus : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
-                Debug.Log("È¸º¹Ã¢ ¿­¸²");
+               _healBar.SetActive(true);
+                _statusMenu.SetActive(true);
                 PanelOpen = true;
+
+                _bandageText.color = Color.yellow;
             }
             else if (Input.GetKeyDown(KeyCode.Backspace) && PanelOpen)
             {
-                Debug.Log("È¸º¹Ã¢ ´ÝÈû");
+                _healBar.SetActive(false);
+                _statusMenu.SetActive(true);
                 PanelOpen = false;
             }
             else if (Input.GetKeyDown(KeyCode.W) && !PanelOpen)
